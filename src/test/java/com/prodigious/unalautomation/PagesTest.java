@@ -63,7 +63,7 @@ public class PagesTest {
     @Test
     public void PageNotFoundTest(){
 
-        WebDriver driver = BrowserFactory.startBrowser("firefox",PAGE_URL );
+        WebDriver driver = BrowserFactory.startBrowser("chrome",PAGE_URL );
 
         HomePage homePage = PageFactory.initElements(driver, HomePage.class);
         homePage.PageNotFound();
@@ -72,7 +72,7 @@ public class PagesTest {
     @Test
     public void AdoptionPageTwoTest(){
 
-        WebDriver driver = BrowserFactory.startBrowser("safari", PAGE_URL);
+        WebDriver driver = BrowserFactory.startBrowser("chrome", PAGE_URL);
 
         HomePage homePage = PageFactory.initElements(driver, HomePage.class);
         homePage.AdoptionPageTwo("Luis Test", "9571 Congress St, Schenectady NY 12345", "luis@test.net");

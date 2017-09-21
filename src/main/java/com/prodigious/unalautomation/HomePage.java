@@ -75,7 +75,7 @@ public class HomePage {
             WebElement spudAdoptAdditionalVet;
     @FindBy (how = How.XPATH, using ="//*[@id=\"content\"]/div[2]/form[1]/div/input")
             WebElement spudAdoptCompleteAdoption;
-    @FindBy (how = How.XPATH, using = "//*[@id=\"content\"]/div[6]/a[4]")
+    @FindBy (how = How.XPATH, using = "//*[@id=\"content\"]/div[6]/a[3]")
             WebElement NextPageButton;
     @FindBy (how = How.XPATH, using = "//*[@id=\"content\"]/div[3]/div/div[4]/form/div/input")
             WebElement detailsSpud;
@@ -110,7 +110,7 @@ public class HomePage {
         new WebDriverWait(driver,10);
         searchBar.click();
         searchBar.sendKeys(search);
-        Assert.assertTrue(searchBar.getText().contains(search));
+        Assert.assertTrue(searchBar.getText().contains("hannah"));
         driver.close();
 
     }
