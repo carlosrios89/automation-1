@@ -12,7 +12,7 @@ public class PagesTest {
     @Test
     public void adoptionTest(){
 
-        WebDriver driver= BrowserFactory.startBrowser("chrome",PAGE_URL);
+        WebDriver driver= BrowserFactory.startBrowser("firefox",PAGE_URL);
 
         HomePage homePage= PageFactory.initElements(driver, HomePage.class);
         homePage.AdoptionProcess("John Doe", "5141 3rd St, Omaha NB 32422", "john@doe.net");
@@ -20,7 +20,7 @@ public class PagesTest {
 
     @Test
     public void assertSearchBar(){
-        WebDriver driver= BrowserFactory.startBrowser("chrome",PAGE_URL);
+        WebDriver driver= BrowserFactory.startBrowser("firefox",PAGE_URL);
 
         HomePage homePage= PageFactory.initElements(driver, HomePage.class);
         homePage.AssertSearchBar("hannah");
@@ -28,7 +28,7 @@ public class PagesTest {
 
     @Test
     public void adoptionChangeMind(){
-        WebDriver driver= BrowserFactory.startBrowser("chrome",PAGE_URL);
+        WebDriver driver= BrowserFactory.startBrowser("firefox",PAGE_URL);
 
         HomePage homePage= PageFactory.initElements(driver, HomePage.class);
         homePage.AdoptionChangeMind();
@@ -36,7 +36,7 @@ public class PagesTest {
 
     @Test
     public void adoptTwoPuppies(){
-        WebDriver driver= BrowserFactory.startBrowser("chrome",PAGE_URL);
+        WebDriver driver= BrowserFactory.startBrowser("firefox",PAGE_URL);
 
         HomePage homePage= PageFactory.initElements(driver, HomePage.class);
         homePage.AdoptTwoPuppies("John Doe", "5141 3rd St, Omaha NB 32422", "john@doe.net");
@@ -45,7 +45,7 @@ public class PagesTest {
     @Test
     public void formTest(){
 
-        WebDriver driver= BrowserFactory.startBrowser("chrome",PAGE_URL);
+        WebDriver driver= BrowserFactory.startBrowser("firefox",PAGE_URL);
 
         HomePage homePage= PageFactory.initElements(driver, HomePage.class);
         homePage.FormError();
@@ -54,7 +54,7 @@ public class PagesTest {
     @Test
     public void returnTest(){
 
-        WebDriver driver= BrowserFactory.startBrowser("chrome",PAGE_URL);
+        WebDriver driver= BrowserFactory.startBrowser("firefox",PAGE_URL);
 
         HomePage homePage= PageFactory.initElements(driver, HomePage.class);
         homePage.DetailsReturntoList();
@@ -63,7 +63,7 @@ public class PagesTest {
     @Test
     public void PageNotFoundTest(){
 
-        WebDriver driver = BrowserFactory.startBrowser("chrome",PAGE_URL );
+        WebDriver driver = BrowserFactory.startBrowser("firefox",PAGE_URL );
 
         HomePage homePage = PageFactory.initElements(driver, HomePage.class);
         homePage.PageNotFound();
@@ -72,7 +72,7 @@ public class PagesTest {
     @Test
     public void AdoptionPageTwoTest(){
 
-        WebDriver driver = BrowserFactory.startBrowser("chrome", PAGE_URL);
+        WebDriver driver = BrowserFactory.startBrowser("firefox", PAGE_URL);
 
         HomePage homePage = PageFactory.initElements(driver, HomePage.class);
         homePage.AdoptionPageTwo("Luis Test", "9571 Congress St, Schenectady NY 12345", "luis@test.net");

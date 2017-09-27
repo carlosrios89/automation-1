@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="8" passed="8">
+  <reporter-output>
+  </reporter-output>
+  <suite name="com.prodigious.unalautomation.PagesTest" duration-ms="58557" started-at="2017-09-21T22:22:55Z" finished-at="2017-09-21T22:23:54Z">
+    <groups>
+    </groups>
+    <test name="Command line test" duration-ms="58557" started-at="2017-09-21T22:22:55Z" finished-at="2017-09-21T22:23:54Z">
+      <class name="com.prodigious.unalautomation.PagesTest">
+        <test-method status="PASS" signature="AdoptionPageTwoTest()[pri:0, instance:com.prodigious.unalautomation.PagesTest@73f792cf]" name="AdoptionPageTwoTest" duration-ms="11391" started-at="2017-09-21T17:22:55Z" finished-at="2017-09-21T17:23:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AdoptionPageTwoTest -->
+        <test-method status="PASS" signature="PageNotFoundTest()[pri:0, instance:com.prodigious.unalautomation.PagesTest@73f792cf]" name="PageNotFoundTest" duration-ms="4939" started-at="2017-09-21T17:23:06Z" finished-at="2017-09-21T17:23:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PageNotFoundTest -->
+        <test-method status="PASS" signature="adoptTwoPuppies()[pri:0, instance:com.prodigious.unalautomation.PagesTest@73f792cf]" name="adoptTwoPuppies" duration-ms="11700" started-at="2017-09-21T17:23:11Z" finished-at="2017-09-21T17:23:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- adoptTwoPuppies -->
+        <test-method status="PASS" signature="adoptionChangeMind()[pri:0, instance:com.prodigious.unalautomation.PagesTest@73f792cf]" name="adoptionChangeMind" duration-ms="6979" started-at="2017-09-21T17:23:23Z" finished-at="2017-09-21T17:23:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- adoptionChangeMind -->
+        <test-method status="PASS" signature="adoptionTest()[pri:0, instance:com.prodigious.unalautomation.PagesTest@73f792cf]" name="adoptionTest" duration-ms="7917" started-at="2017-09-21T17:23:30Z" finished-at="2017-09-21T17:23:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- adoptionTest -->
+        <test-method status="PASS" signature="assertSearchBar()[pri:0, instance:com.prodigious.unalautomation.PagesTest@73f792cf]" name="assertSearchBar" duration-ms="4373" started-at="2017-09-21T17:23:38Z" finished-at="2017-09-21T17:23:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- assertSearchBar -->
+        <test-method status="PASS" signature="formTest()[pri:0, instance:com.prodigious.unalautomation.PagesTest@73f792cf]" name="formTest" duration-ms="6303" started-at="2017-09-21T17:23:42Z" finished-at="2017-09-21T17:23:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- formTest -->
+        <test-method status="PASS" signature="returnTest()[pri:0, instance:com.prodigious.unalautomation.PagesTest@73f792cf]" name="returnTest" duration-ms="4922" started-at="2017-09-21T17:23:49Z" finished-at="2017-09-21T17:23:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- returnTest -->
+      </class> <!-- com.prodigious.unalautomation.PagesTest -->
+    </test> <!-- Command line test -->
+  </suite> <!-- com.prodigious.unalautomation.PagesTest -->
+</testng-results>

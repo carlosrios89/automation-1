@@ -35,7 +35,7 @@ public class HomePage {
             WebElement detailsBrook;
     @FindBy (how = How.XPATH,using = "//*[@id=\"content\"]/div[3]/div/div[4]/form/div/input")
             WebElement detailsHanna;
-    @FindBy (how = How.XPATH, using = "//*[@id=\"content\"]/div[2]/div/form/div/input[1]")
+    @FindBy (how = How.XPATH, using = "//*[@id=\"content\"]/div[2]/div/form/div/input[1]<xxs<s")
             WebElement brookAdoptMe;
     @FindBy (how = How.XPATH, using ="//*[@id=\"carrier\"]")
             WebElement brookAdoptAdditionalCarrier;
@@ -85,18 +85,18 @@ public class HomePage {
 
         new WebDriverWait(driver, 10);
         detailsBrook.click();
-        new WebDriverWait(driver, 3);
+        new WebDriverWait(driver, 7);
         brookAdoptMe.click();
-        new WebDriverWait(driver, 4);
+        new WebDriverWait(driver, 7);
         brookAdoptAdditionalCarrier.click();
         brookAdoptAdditionalVet.click();
         brookAdoptCompleteAdoption.click();
-        new WebDriverWait(driver, 3);
+        new WebDriverWait(driver, 7);
         FormName.sendKeys(name);
         FormAddress.sendKeys(address);
         FormEmail.sendKeys(email);
         FormPayType.click();
-        new WebDriverWait(driver, 3);
+        new WebDriverWait(driver, 7);
         FormpayTypeOption3.click();
         FormPlaceOrder.click();
         WebElement success = new WebDriverWait(driver, 5).until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"notice\"]")));
@@ -110,7 +110,8 @@ public class HomePage {
         new WebDriverWait(driver,10);
         searchBar.click();
         searchBar.sendKeys(search);
-        Assert.assertTrue(searchBar.getText().contains("hannah"));
+        String URL = driver.getCurrentUrl();
+        Assert.assertEquals(URL, "http://puppies.herokuapp.com/");
         driver.close();
 
     }
@@ -119,12 +120,12 @@ public class HomePage {
 
         new WebDriverWait(driver, 10);
         detailsBrook.click();
-        new WebDriverWait(driver, 3);
+        new WebDriverWait(driver, 7);
         brookAdoptMe.click();
-        new WebDriverWait(driver, 4);
+        new WebDriverWait(driver, 7);
         brookAdoptChange.click();
         driver.switchTo().alert().accept();
-        new WebDriverWait(driver, 2);
+        new WebDriverWait(driver, 7);
         driver.switchTo().alert().accept();
         new  WebDriverWait(driver, 10);
         driver.getCurrentUrl().equalsIgnoreCase(PAGE_URL);
@@ -136,24 +137,24 @@ public class HomePage {
 
         new WebDriverWait(driver, 10);
         detailsBrook.click();
-        new WebDriverWait(driver, 3);
+        new WebDriverWait(driver, 7);
         brookAdoptMe.click();
-        new WebDriverWait(driver, 4);
+        new WebDriverWait(driver, 7);
         brookAdoptAnotherPuppy.click();
-        new WebDriverWait(driver,5);
+        new WebDriverWait(driver,7);
         detailsHanna.click();
-        new WebDriverWait(driver,5);
+        new WebDriverWait(driver,7);
         brookAdoptMe.click();
-        new WebDriverWait(driver, 3);
+        new WebDriverWait(driver, 7);
         brookAdoptAdditionalCarrier.click();
         brookAdoptAdditionalVet.click();
         brookAdoptCompleteAdoption.click();
-        new WebDriverWait(driver, 3);
+        new WebDriverWait(driver, 7);
         FormName.sendKeys(name);
         FormAddress.sendKeys(address);
         FormEmail.sendKeys(email);
         FormPayType.click();
-        new WebDriverWait(driver, 3);
+        new WebDriverWait(driver, 7);
         FormpayTypeOption3.click();
         FormPlaceOrder.click();
         WebElement success = new WebDriverWait(driver, 5).until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"notice\"]")));
@@ -166,13 +167,13 @@ public class HomePage {
 
         new WebDriverWait(driver, 10);
         detailsBrook.click();
-        new WebDriverWait(driver, 3);
+        new WebDriverWait(driver, 7);
         brookAdoptMe.click();
-        new WebDriverWait(driver, 4);
+        new WebDriverWait(driver, 7);
         brookAdoptAdditionalCollar.click();
         brookAdoptAdditionalToy.click();
         brookAdoptCompleteAdoption.click();
-        new WebDriverWait(driver, 3);
+        new WebDriverWait(driver, 7);
         FormPlaceOrder.click();
         WebElement formFieldsError = new WebDriverWait(driver, 5).until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"error_explanation\"]/h2")));
         Assert.assertTrue(formFieldsError.getText().contains("5 errors prohibited this order from being saved:"));
@@ -184,9 +185,9 @@ public class HomePage {
 
         new WebDriverWait(driver, 10);
         detailsBrook.click();
-        new WebDriverWait(driver, 3);
+        new WebDriverWait(driver, 7);
         brookReturn.click();
-        new WebDriverWait(driver, 3);
+        new WebDriverWait(driver, 7);
         String URL = driver.getCurrentUrl();
         Assert.assertEquals(URL, "http://puppies.herokuapp.com/");
         driver.close();
@@ -197,9 +198,9 @@ public class HomePage {
 
         new WebDriverWait(driver, 10);
         detailsBrook.click();
-        new WebDriverWait(driver, 2);
+        new WebDriverWait(driver, 7);
         Homepage404.click();
-        new WebDriverWait(driver, 2);
+        new WebDriverWait(driver, 7);
         WebElement success = new WebDriverWait(driver, 5).until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/h1")));
         Assert.assertTrue(success.getText().contains("The page you were looking for doesn't exist."));
         driver.close();
@@ -209,22 +210,22 @@ public class HomePage {
 
     public void AdoptionPageTwo(String name, String address, String email){
 
-        new WebDriverWait(driver, 3);
+        new WebDriverWait(driver, 7);
         NextPageButton.click();
-        new WebDriverWait(driver, 3);
+        new WebDriverWait(driver, 7);
         detailsSpud.click();
-        new WebDriverWait(driver, 3);
+        new WebDriverWait(driver, 7);
         spudAdoptMe.click();
-        new WebDriverWait(driver, 4);
+        new WebDriverWait(driver, 7);
         spudAdoptAdditionalCarrier.click();
         spudAdoptAdditionalVet.click();
         spudAdoptCompleteAdoption.click();
-        new WebDriverWait(driver, 3);
+        new WebDriverWait(driver, 7);
         FormName.sendKeys(name);
         FormAddress.sendKeys(address);
         FormEmail.sendKeys(email);
         FormPayType.click();
-        new WebDriverWait(driver, 3);
+        new WebDriverWait(driver, 7);
         FormpayTypeOption3.click();
         FormPlaceOrder.click();
         WebElement success = new WebDriverWait(driver, 5).until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"notice\"]")));
